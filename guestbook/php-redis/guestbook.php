@@ -37,5 +37,6 @@ if (isset($_GET['cmd']) === true) {
     print('{"data": "' . $value . '"}');
   }
 } else {
+  print('<h1>Hello World</h1>');
   phpinfo();
 } ?>
