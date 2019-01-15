@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: guestbook
+      app: rce
       tier: frontend
   replicas: 3
   template:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: gcr.io/google-samples/gb-frontend:v4
+        image: gcr.io/google-samples/gb-frontend:v2
         resources:
           requests:
             cpu: 100m
