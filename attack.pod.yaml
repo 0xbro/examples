@@ -9,7 +9,6 @@ spec:
   - name: test-volume
     hostPath:
       path: /
-      type: Directory
   containers:
   - name: nginx
     image: nginx
