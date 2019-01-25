@@ -6,6 +6,11 @@ metadata:
   labels:
     app: attack      
 spec:
+  volumes:
+  - name: test-volume
+    hostPath:
+    - path: /etc
+      type: Directory
   containers:
   - name: attack-container
     image: ubuntu
@@ -14,8 +19,3 @@ spec:
     - name: test-volume
       mountPath: /tmp
       readOnly: true
-  volumes:
-  - name: test-volume
-    hostPath:
-    - path: /etc
-      type: Directory
