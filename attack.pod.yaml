@@ -10,8 +10,8 @@ spec:
     hostPath:
       path: /
   containers:
-  - name: nginx
-    image: nginx
+  - name: ubuntu
+    image: ubuntu
     volumeMounts:
     - name: shared-data
       mountPath: /usr/share/nginx/html
