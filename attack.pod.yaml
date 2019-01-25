@@ -6,9 +6,16 @@ spec:
   volumes:
   - name: shared-data
     emptyDir: {}
+  - name: test-volume
+    hostPath:
+      path: /tmp
+      type: Directory
   containers:
   - name: nginx
     image: nginx
     volumeMounts:
     - name: shared-data
       mountPath: /usr/share/nginx/html
+    - name: test-volume
+      mountPath: /root
+
