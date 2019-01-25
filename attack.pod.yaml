@@ -14,8 +14,3 @@ spec:
     - name: test-volume
       mountPath: /tmp
       readOnly: true
-  volumes:
-  - name: test-volume
-    hostPath:
-    - path: /etc
-      type: Directory
