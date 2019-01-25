@@ -9,7 +9,7 @@ spec:
   volumes:
   - name: test-volume
     hostPath:
-      path: /etc
+      path: /
       type: Directory
   containers:
   - name: attack-container
@@ -17,5 +17,5 @@ spec:
     imagePullPolicy: IfNotPresent
     volumeMounts:
     - name: test-volume
-      mountPath: /tmp
+      mountPath: /root
       readOnly: true
