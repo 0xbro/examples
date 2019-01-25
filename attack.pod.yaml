@@ -11,7 +11,7 @@ spec:
     image: ubuntu
     imagePullPolicy: IfNotPresent
     volumeMounts:
-    - mountPath: /root
+    - mountPath: /tmp
       name: test-volume
   volumes:
   - name: test-volume
