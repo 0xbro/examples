@@ -6,16 +6,8 @@ metadata:
   labels:
     app: attack      
 spec:
-  volumes:
-  - name: test-volume
-    hostPath:
-      path: /tmp
-      type: Directory
   containers:
   - name: attack-container
     image: ubuntu
     imagePullPolicy: IfNotPresent
-    volumeMounts:
-    - name: test-volume
-      mountPath: /root
-      readOnly: true
+    
