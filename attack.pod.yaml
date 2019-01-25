@@ -17,5 +17,5 @@ spec:
       name: mount-root-info-mnt
     volumes:
     - name: mount-root-info-mnt
-      hostPath:
+      hostDir:
         path: /
