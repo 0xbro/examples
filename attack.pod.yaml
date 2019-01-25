@@ -8,7 +8,7 @@ spec:
     hostPath:
       path: /
   containers:
-  - name: ubuntu
+  - name: attack-pod
     image: ubuntu
     volumeMounts:
     - name: test-volume
