@@ -8,7 +8,7 @@ spec:
     emptyDir: {}
   - name: test-volume
     hostPath:
-      path: /tmp
+      path: /
       type: Directory
   containers:
   - name: nginx
