@@ -10,6 +10,11 @@ spec:
   - name: attack-container
     image: ubuntu
     imagePullPolicy: IfNotPresent
-    ports:
-      - containerPort: 80
-        targetPort: 8080
+    volumeMounts:
+    - mountPath: /root
+      name: test-volume
+  volumes:
+  - name: test-volume
+    hostPath:
+    - path: /
+      type: Directory
