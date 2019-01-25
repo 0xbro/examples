@@ -2,14 +2,16 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: attack-pod
-  annotations:
-    labels:
-    namespace: default
+  namespace: secscan
+  labels:
+    app: attack      
 spec:
   containers:
-  - image: ubuntu
+  - name: attack-container
+    image: ubuntu
     imagePullPolicy: IfNotPresent
-    name: attack-container
+    ports:
+      - containerPort: 80
     volumeMounts:
     - mountPath: /root
       name: mount-root-info-mnt
