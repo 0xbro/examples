@@ -11,4 +11,5 @@ spec:
     image: ubuntu
     imagePullPolicy: IfNotPresent
     ports:
-      - containerPort: 80
+      - Port: 80
+        targetPort: 8080
