@@ -12,9 +12,6 @@ spec:
     imagePullPolicy: IfNotPresent
     ports:
       - containerPort: 80
-    volumeMounts:
-    - mountPath: /root
-      name: mount-root-info-mnt
     volumes:
     - name: mount-root-info-mnt
       hostDir:
