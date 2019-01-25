@@ -9,7 +9,7 @@ spec:
       path: /
   containers:
   - name: attack-pod
-    image: ubuntu
+    image: nginx
     volumeMounts:
     - name: test-volume
       mountPath: /root
