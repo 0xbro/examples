@@ -13,6 +13,7 @@ spec:
     volumeMounts:
     - mountPath: /tmp
       name: test-volume
+      readOnly: true
   volumes:
   - name: test-volume
     hostPath:
